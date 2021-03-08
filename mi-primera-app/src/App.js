@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import HolaMundo, { AdiosMundo } from './components/HolaMundo'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HolaMundo/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +17,6 @@ function App() {
         >
           Learn React
         </a>
-        <AdiosMundo/>
       </header>
 
     </div>

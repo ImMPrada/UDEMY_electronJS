@@ -1,22 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Saludar, { ButtonSaludar } from './components/Saludar'
 
 function App() {
+
+  const user = {
+    nombre : "Simelomon",
+    apellido : "Tolomeo",
+    hobbies : ["hobbie 1", "Hobbie 2", "Hobbie 3", "Hobbie 4"]
+  }
+
+  const saludar = () => {
+    console.log("hola")
+    alert("hola hola")
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
+        <Saludar userInfo={user}/>
+        <ButtonSaludar saludarFn={saludar}/>
+      <header>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
 
     </div>
